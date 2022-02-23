@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Drumify</title>
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav__logo">
+            <img src="drumset/drumIcon4.svg" alt="" class="logoIcon">
+            <h3 class="nav__logo__title">Drumify</h3>
+        </div>
+        <ul class="nav__ul">
+            <li class="nav__li"><a class="nav__a" href="http://">Home</a></li>
+            <li class="nav__li"><a class="nav__a" href="http://">Lessons</a></li>
+            <li class="nav__li"><a class="nav__a" href="http://">About</a></li>
+            <li class="nav__li"><a class="nav__a" href="http://">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="mainContent">
+        <!-- Drums Container -->
+        <div class="drumContainer">
+            <!-- Kick -->
+            <img src="drumset/kick.svg" alt="" class="kick" id="drumKick">
+            <!-- Snare -->
+            <img src="drumset/snare.svg" alt="" class="snare" id="drumSnare">
+            <!-- Toms -->
+            <img src="drumset/tom.svg" alt="" class="leftTom" id="tomLeft">
+            <img src="drumset/tom.svg" alt="" class="rightTom" id="tomRight">
+            <img src="drumset/tomIron.svg" alt="" class="tomsIron">
+            <img src="drumset/floorTom.svg" alt="" class="floorTom" id="floorTom">
+            <img src="drumset/floorTomIron.svg" alt="" class="floorTomIron">
+            <!-- Crashs -->
+            <img src="drumset/crash.svg" alt="" class="crashLeft" id="crashLeft">
+            <img src="drumset/crashIron2.svg" alt="" class="crashIronLeft">
+            <img src="drumset/crash.svg" alt="" class="crashRight" id="crashRight">
+            <img src="drumset/crashIron2.svg" alt="" class="crashIronRight">
+            <!-- Ride -->
+            <img src="drumset/ride.svg" alt="" class="ride" id="ride">
+            <img src="drumset/rideIron.svg" alt="" class="rideIron">
+            <!-- HiHat -->
+            <img src="drumset/hiHatUpper.svg" alt="" class="hiHatUpper" id="upperHat">
+            <img src="drumset/hiHatLower.svg" alt="" class="hiHatLower" id="lowerHat">
+            <img src="drumset/hiHatIron.svg" alt="" class="hiHatIron">
+        </div>
+    </main>
+
+    <footer class="footer"></footer>
+
+    <!-- Audio files -->
+    <audio id="kick" src="sounds/kick.wav"></audio>
+    <audio id="snare" src="sounds/snare.wav"></audio>
+    <audio id="openHat" src="sounds/openhat.wav"></audio>
+    <audio id="hiHat" src="sounds/hihat.wav"></audio>
+    <audio id="soundTomRight" src="sounds/tomright.wav"></audio>
+    <audio id="soundTomLeft" src="sounds/tomleft.wav"></audio>
+    <audio id="soundFloorTom" src="sounds/floortom.wav"></audio>
+    <audio id="soundRide" src="sounds/ride.wav"></audio>
+    <audio id="soundCrash" src="sounds/crash.wav"></audio>
+
+    <!-- Js Script -->
+    <script src="app.js"></script>
+</body>
+
+</html>

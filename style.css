@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+
+/* :root {
+    font-size: 1.7rem;
+    box-sizing: border-box;
+    
+} */
+
+
+
+body {
+    background-color: rgb(227, 233, 233);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav {
+    display: flex;
+    height: 10vh;
+    width: 100vw;
+    /* background-color: rgb(227, 233, 233); */
+    background-color: #537AA3;
+    justify-content: space-between;
+    padding: 1rem 2rem 1rem 2rem;
+
+}
+
+.nav__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoIcon {
+    color: white;
+    width: 1.7em;
+    margin-right: 0.2em;
+    margin-bottom: 0.3em;
+}
+
+.nav__logo__title {
+    /* color: rgb(0, 139, 139); */
+    color:rgb(227, 233, 233);
+    letter-spacing: 0.05em;
+}
+
+.nav__ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav__li {
+    list-style: none;
+    margin: 0 0 0 0.5em;
+}
+
+.nav__a {
+    text-decoration: none;
+    cursor: pointer;
+    /* color: rgb(0, 139, 139); */
+    color:rgb(227, 233, 233);
+    font-size: 0.8em;
+}
+
+.mainContent {
+    height: 85vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.footer {
+    height: 5vh;
+    width: 100vw;
+    background-color: #537AA3;
+}
+
+/* drumcontainer */
+.drumContainer {
+    height: 20rem;
+    width: 30rem;
+    display: flex;
+    justify-content:flex-end;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    margin: 0
+}
+
+/* --- Drum Elements --- */
+
+/* kick */
+.kick {
+    width: 10em;
+    position: absolute;
+    z-index: 3;
+}
+
+/* snare */
+.snare {
+    width: 5.2em;
+    position: absolute;
+    left: 19.2em;
+    top: 10.5em;
+    z-index: 2;
+    overflow: hidden;
+}
+
+/* toms */
+.tomsIron {
+    width: 2em;
+    position: absolute;
+    top: 7.6em;
+}
+
+.leftTom {
+    width: 4em;
+    position: absolute;
+    top: 6em;
+    left: 10.34em;
+    z-index: 1;
+}
+
+.rightTom {
+    width: 4em;
+    position: absolute;
+    top: 6em;
+    left: 15.7em;
+    z-index: 1;
+}
+
+.floorTom {
+    width: 5.5em;
+    position: absolute;
+    left: 5.2em;
+    top: 10.4em;
+    z-index: 1;
+}
+
+.floorTomIron {
+    width: 10em;
+    position: absolute;
+    left: 3.27em;
+    top: 12.8em;
+}
+
+/* symbals */
+.crashLeft {
+    width: 6.9em;
+    position: absolute;
+    left: 3.25em;
+    top: 3.4em;
+    z-index: 1;
+}
+
+.crashRight {
+    position: absolute;
+    width: 6.9em;
+    top: 3.4em;
+    left: 18.5em;
+    z-index: 1;
+}
+
+.crashIronLeft {
+    position: absolute;
+    width: 3.9em;
+    left: 4.75em;
+    top: 3em;
+}
+
+
+.crashIronRight {
+    position: absolute;
+    width: 3.9em;
+    left: 20em;
+    top: 3em;
+}
+
+.ride {
+    width: 8em;
+    position: absolute;
+    left: 1.4em;
+    top: 7.2em;
+    z-index: 1;
+}
+
+.rideIron {
+    width: 3.9em;
+    position: absolute;
+    left: 3.42em;
+    top: 6.8em;
+}
+
+/* hi-hat */
+.hiHatLower {
+    position: absolute;
+    z-index: 1;
+    width: 5.9em;
+    left: 21.30em;
+    top: 9.5em;
+}
+
+.hiHatUpper {
+    position: absolute;
+    width: 5.9em;
+    left: 21.3em;
+    top: 7.45em;
+    z-index: 1;
+}
+
+.hiHatIron {
+    width: 3.9em;
+    position: absolute;
+    top: 7.15em;
+    left: 22.3em;
+}
+
+.drum__active {
+    transform: scale(1.02);
+    filter: saturate(150%);
+}
+
+.closeHiHat__active {
+    filter: saturate(150%);
+}
+
+.hiHat__active {
+    transform: translateY(0.65em) scale(1.02);
+    transition: ease-in-out;
+    filter: saturate(150%);
+}
+
+.ride__active {
+    
+    filter: saturate(150%);
+    animation: cymbal 0.1s;
+}
+
+@keyframes cymbal {
+    0% {
+        transform:rotate(3deg) scale(1.02);
+        transition: ease-in-out;
+    }
+
+    50% {
+        transform:rotate(-6deg) scale(1.02);
+        transition: ease-in-out;
+    }
+
+    100% {
+        transform:rotate(3deg) scale(1.02);
+        transition: ease-in-out;
+    }
+}

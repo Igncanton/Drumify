@@ -1,0 +1,16 @@
+Q: Crash - left
+W: Tom 1
+E: Tom 2
+R: Tom Floor 
+T: Crash - Right
+
+A: Snare
+S: Snare
+D: Hi Hat Closed
+F: Hi Hat Open
+G: Ride
+
+z: Sublow
+x: Kick
+C: Kick
+V: Sub + Kick
